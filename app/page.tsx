@@ -6,6 +6,7 @@ import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import BeyondWork from "@/components/sections/BeyondWork";
 import Contact from "@/components/sections/Contact";
+import Footer from "@/components/sections/Footer";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <BeyondWork />
       <Contact />
       <ThemeToggle />
+      <Footer />
     </main>
   );
 }
