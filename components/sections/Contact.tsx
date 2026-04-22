@@ -40,7 +40,7 @@ export default function Contact() {
                     </li>
                     <li className="flex gap-2">
                       <span className="text-accent">▸</span>
-                      <span>Visa: {availability.visa}</span>
+                      <span suppressHydrationWarning>Visa: {availability.visa}</span>
                     </li>
                     {availability.internshipOpen && (
                       <li className="flex gap-2">
