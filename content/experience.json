@@ -1,22 +1,6 @@
 {
   "timeline": [
     {
-      "id": "ai-intern",
-      "type": "work",
-      "icon": "🤖",
-      "role": "AI Engineering Intern",
-      "org": "Independent Project",
-      "location": "Seattle",
-      "start": "2026-04",
-      "end": "present",
-      "bullets": [
-        "Built LangGraph agent with 3 specialized tools (semantic search, ML prediction, requirements lookup)",
-        "Achieved 80% precision@5 on RAG evaluation across 20 test queries",
-        "Implemented multi-turn conversation memory via LangGraph checkpointing"
-      ],
-      "tags": ["LangGraph", "RAG", "Python"]
-    },
-    {
       "id": "msis",
       "type": "education",
       "icon": "🎓",
