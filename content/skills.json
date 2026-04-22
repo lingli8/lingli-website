@@ -21,7 +21,7 @@
         {"name": "SQL", "usedIn": "Transit DW, PermitPredict", "level": "proficient"},
         {"name": "ETL/ELT Pipelines", "usedIn": "Seattle Transit DW", "level": "proficient"},
         {"name": "Star Schema / 3NF", "usedIn": "Seattle Transit DW, Cinema DB", "level": "proficient"},
-        {"name": "Kafka", "level": "learning"},
+        {"name": "Kafka", "level": "familiar"},
         {"name": "Airflow", "level": "familiar"},
         {"name": "Spark", "level": "familiar"},
         {"name": "dbt", "level": "familiar"}
@@ -61,7 +61,7 @@
       "skills": [
         {"name": "FastAPI", "level": "proficient"},
         {"name": "Spring Boot", "level": "comfortable"},
-        {"name": "Next.js 15", "level": "comfortable"},
+        {"name": "Next.js", "level": "comfortable"},
         {"name": "REST APIs", "level": "proficient"},
         {"name": "Event-Driven Architecture", "level": "comfortable"}
       ]
