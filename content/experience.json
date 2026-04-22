@@ -4,10 +4,10 @@
       "id": "ai-intern",
       "type": "work",
       "icon": "🤖",
-      "role": "AI Engineering Intern",
+      "role": "Data Engineering Intern",
       "org": "Independent / JR's team",
       "location": "Seattle",
-      "start": "2026-04",
+      "start": "2026-05",
       "end": "present",
       "bullets": [
         "Built LangGraph agent with 3 specialized tools",
