@@ -1,4 +1,8 @@
+"use client";
+
 import type { ExperienceEntry } from "@/lib/schemas";
+import { useEasterEggs } from "@/components/ui/EasterEggTracker";
+import { EASTER_EGGS } from "@/lib/easter-eggs";
 
 interface Props {
   entry: ExperienceEntry;
@@ -8,6 +12,7 @@ interface Props {
 export default function ExperienceEntryRow({ entry, isLast }: Props) {
   const isCurrent = entry.end === "present";
   const isWork = entry.type === "work";
+  const { discover } = useEasterEggs();
 
   return (
     <div className="flex gap-4 md:gap-6">
@@ -36,9 +41,10 @@ export default function ExperienceEntryRow({ entry, isLast }: Props) {
           <span className="font-semibold text-foreground">{entry.role}</span>
           {entry.hiddenEasterEgg && (
             <span
-              className="opacity-0 hover:opacity-100 transition-opacity cursor-default text-base select-none"
+              className="opacity-0 hover:opacity-100 transition-opacity cursor-pointer text-base select-none"
               title="Easter egg unlocked 🎉"
               aria-hidden="true"
+              onClick={() => discover(EASTER_EGGS.EY_SWEAT_DROP)}
             >
               {entry.hiddenEasterEgg}
             </span>

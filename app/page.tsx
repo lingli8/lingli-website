@@ -8,6 +8,7 @@ import BeyondWork from "@/components/sections/BeyondWork";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import { EasterEggToast } from "@/components/ui/EasterEggTracker";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Contact />
       <ThemeToggle />
       <Footer />
+      <EasterEggToast />
     </main>
   );
 }
