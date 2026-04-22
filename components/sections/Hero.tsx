@@ -63,7 +63,7 @@ export default function Hero() {
             email={profile.email}
             github={profile.social.github}
             linkedin={profile.social.linkedin}
-            resumeHref={profile.resumes.data}
+            resumes={profile.resumes}
             mode={mode}
           />
 
