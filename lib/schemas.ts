@@ -163,11 +163,33 @@ export const SceneTextSchema = z.object({
   side: z.string().optional(),
 });
 
+export const ScenePopupSchema = z.object({
+  main: z.array(z.string()).optional(),
+  side: z.array(z.string()).optional(),
+});
+
+export const SceneEasterEggSchema = z.object({
+  id: z.string(),
+  sprite: z.string(),
+  position: z.string(),
+  label: z.string().optional(),
+});
+
 export const AnimationSceneSchema = z.object({
   id: z.string(),
   duration: z.number(),
-  text: SceneTextSchema.optional(),
+  // Scene 0: cold-open content
+  content: z.object({ tagline: z.string().optional() }).optional(),
+  // Scenes with backgrounds / characters / popups
+  background: z.string().optional(),
+  character: z.string().optional(),
+  popup: ScenePopupSchema.optional(),
+  easterEgg: SceneEasterEggSchema.optional(),
+  effects: z.array(z.string()).optional(),
+  // Template variable substitution at render time
   templateVars: z.array(z.string()).optional(),
+  // Legacy text field — kept for backwards compatibility
+  text: SceneTextSchema.optional(),
 });
 
 export const AnimationScenesSchema = z.object({
@@ -210,6 +232,8 @@ export type Achievements = z.infer<typeof AchievementsSchema>;
 export type HobbyItem = z.infer<typeof HobbyItemSchema>;
 export type Hobbies = z.infer<typeof HobbiesSchema>;
 export type AboutFrontMatter = z.infer<typeof AboutFrontMatterSchema>;
+export type ScenePopup = z.infer<typeof ScenePopupSchema>;
+export type SceneEasterEgg = z.infer<typeof SceneEasterEggSchema>;
 export type AnimationScene = z.infer<typeof AnimationSceneSchema>;
 export type AnimationScenes = z.infer<typeof AnimationScenesSchema>;
 export type Meta = z.infer<typeof MetaSchema>;
