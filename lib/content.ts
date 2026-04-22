@@ -46,12 +46,3 @@ export const content = {
   // (e.g. next-mdx-remote). Import and render in the About component.
 };
 
-export type Profile = typeof profileData;
-export type Status = typeof statusData;
-export type Skills = typeof skillsData;
-export type Experience = typeof experienceData;
-export type Projects = typeof projectsData;
-export type Achievements = typeof achievementsData;
-export type Hobbies = typeof hobbiesData;
-export type Meta = typeof metaData;
-export type AnimationScenes = typeof animationScenesData;

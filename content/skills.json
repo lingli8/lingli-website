@@ -68,7 +68,7 @@
     },
     {
       "id": "learning",
-      "icon": "🔥",
+      "icon": "🥋",
       "name": "Currently Learning",
       "skills": [
         {"name": "System Design", "level": "learning"},
