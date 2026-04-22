@@ -4,6 +4,7 @@ import FeaturedAchievement from "@/components/sections/FeaturedAchievement";
 import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
+import BeyondWork from "@/components/sections/BeyondWork";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Projects />
+      <BeyondWork />
       <ThemeToggle />
     </main>
   );
