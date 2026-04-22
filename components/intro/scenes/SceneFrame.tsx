@@ -8,8 +8,8 @@ import { useEasterEggs } from "@/components/ui/EasterEggTracker";
 import { scenes as sceneSprites, items as itemSprites } from "@/lib/sprites";
 import type { Scene, Item, CharacterVariant } from "@/lib/sprites";
 
-// Warm dark background used when no scene sprite is provided
-const FALLBACK_BG = "#3D2B20";
+// Warm cream background used when no scene sprite is provided (matches tokens.ts light bg)
+const FALLBACK_BG = "#FFF5E1";
 
 interface SceneFrameProps {
   background?: Scene;
@@ -87,14 +87,16 @@ export default function SceneFrame({
           className="absolute pointer-events-none z-10"
           style={{ left, top: 0 }}
           initial={{ y: -40, opacity: 1 }}
-          animate={reduced ? { y: 0, opacity: 0.6 } : { y: "110%", opacity: 0 }}
-          transition={{ duration: 0.9, delay, ease: "easeIn" }}
+          // y must be a large pixel value — framer-motion "%" is relative to the
+          // element's own height (32 px), not the container height.
+          animate={reduced ? { y: 20, opacity: 0.7 } : { y: 600, opacity: 1 }}
+          transition={{ duration: 1.1, delay, ease: "easeIn" }}
         >
           <Image
             src="/sprites/effects/confetti.png"
             alt=""
-            width={32}
-            height={32}
+            width={40}
+            height={40}
             unoptimized
             style={{ imageRendering: "pixelated" }}
           />
@@ -103,7 +105,10 @@ export default function SceneFrame({
 
       {/* ── Character ──────────────────────────────────────────────── */}
       {character && (
-        <div className={`absolute bottom-4 z-20 ${charAlignClass}`}>
+        <div
+          className={`absolute z-20 ${charAlignClass}`}
+          style={{ bottom: "10%", background: "transparent" }}
+        >
           <PixelCharacter variant={character.variant} scale={5} />
         </div>
       )}
@@ -186,18 +191,18 @@ function EggSprite({ sprite, position, eggId, label, discover, reduced }: EggSpr
   const isRight = position === "right";
 
   const posStyle: React.CSSProperties = isBottomRight
-    ? { position: "absolute", bottom: "10%", right: 0, zIndex: 25 }
+    ? { position: "absolute", bottom: "6%", right: "2%", zIndex: 25 }
     : isRight
-    ? { position: "absolute", top: "30%", right: "4%", zIndex: 25 }
+    ? { position: "absolute", top: "25%", right: "4%", zIndex: 25 }
     : { position: "absolute", bottom: "20%", right: "4%", zIndex: 25 };
 
-  // Cat at bottom-right: slides in from off-screen right
+  // Cat at bottom-right: slides in quickly from off-screen right
   const motionProps =
     isBottomRight && !reduced
       ? {
-          initial: { x: "120%" },
+          initial: { x: "140%" },
           animate: { x: 0 },
-          transition: { duration: 1.0, delay: 0.4, ease: "linear" as const },
+          transition: { duration: 0.5, delay: 0.2, ease: "linear" as const },
         }
       : {};
 
@@ -212,8 +217,8 @@ function EggSprite({ sprite, position, eggId, label, discover, reduced }: EggSpr
         <Image
           src={itemSprites[sprite]}
           alt=""
-          width={48}
-          height={48}
+          width={64}
+          height={64}
           unoptimized
           style={{ imageRendering: "pixelated" }}
           className="group-hover:scale-110 transition-transform"

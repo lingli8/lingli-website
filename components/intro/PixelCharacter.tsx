@@ -77,6 +77,7 @@ export default function PixelCharacter({
       style={{
         position: "relative",
         display: "inline-block",
+        background: "transparent",
         width: displayWidth,
         height: displayHeight,
         overflow: "hidden",
