@@ -25,7 +25,7 @@
       "title": "OSS4AI Hackathon — Prompt Engineering Tool",
       "badge": "🏆",
       "subtitle": "1st hackathon win, 2 months after arriving in the US",
-      "oneLiner": "[Fill in based on actual project]",
+      "oneLiner": "Bias detection system for online comments; prompt engineering strategy won 1st place",
       "stack": ["Python", "LLM APIs"],
       "links": {
         "github": "https://github.com/lingli8"
