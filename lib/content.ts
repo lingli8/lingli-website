@@ -20,28 +20,19 @@ import {
   AnimationScenesSchema,
 } from '@/lib/schemas';
 
-// Validate all content files at module load time.
-// If any file is malformed, the build fails here — not in production.
-ProfileSchema.parse(profileData);
-StatusSchema.parse(statusData);
-SkillsSchema.parse(skillsData);
-ExperienceSchema.parse(experienceData);
-ProjectsSchema.parse(projectsData);
-AchievementsSchema.parse(achievementsData);
-HobbiesSchema.parse(hobbiesData);
-MetaSchema.parse(metaData);
-AnimationScenesSchema.parse(animationScenesData);
-
+// Parse all content files at module load time.
+// parse() validates AND returns properly-typed data — if any file is
+// malformed the build fails here, before any component sees the data.
 export const content = {
-  profile: profileData,
-  status: statusData,
-  skills: skillsData,
-  experience: experienceData,
-  projects: projectsData,
-  achievements: achievementsData,
-  hobbies: hobbiesData,
-  meta: metaData,
-  animationScenes: animationScenesData,
+  profile:         ProfileSchema.parse(profileData),
+  status:          StatusSchema.parse(statusData),
+  skills:          SkillsSchema.parse(skillsData),
+  experience:      ExperienceSchema.parse(experienceData),
+  projects:        ProjectsSchema.parse(projectsData),
+  achievements:    AchievementsSchema.parse(achievementsData),
+  hobbies:         HobbiesSchema.parse(hobbiesData),
+  meta:            MetaSchema.parse(metaData),
+  animationScenes: AnimationScenesSchema.parse(animationScenesData),
   // about: loaded separately — about.mdx requires MDX processing
   // (e.g. next-mdx-remote). Import and render in the About component.
 };

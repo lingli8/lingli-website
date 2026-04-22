@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+/* ── Base CSS variables (light mode) ─────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF5E1;
+  --foreground: #2D2020;
+  --accent:     #E07856;
+  --secondary:  #4A5F85;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* ── Dark mode overrides ─────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1A1515;
+    --foreground: #F5D3B5;
+    --accent:     #FFB4A2;
+    --secondary:  #8DA3C4;
   }
 }
 
+/* ── Tailwind v4 theme — maps CSS vars to utility classes ────────────────── */
+@theme inline {
+  /* Fonts */
+  --font-sans:  var(--font-inter);
+  --font-pixel: var(--font-press-start);
+  --font-mono:  var(--font-jetbrains-mono);
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent:     var(--accent);
+  --color-secondary:  var(--secondary);
+  --color-success:    #7BA05B;
+  --color-divider:    #D4B896;
+}
+
+/* ── Base styles ─────────────────────────────────────────────────────────── */
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color:      var(--foreground);
 }
