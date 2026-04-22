@@ -2,6 +2,7 @@ import Image from "next/image";
 import { content } from "@/lib/content";
 import HeroTagline from "./HeroTagline";
 import HeroLinks from "./HeroLinks";
+import HeroIntroHint from "./HeroIntroHint";
 
 export default function Hero() {
   const { profile, status } = content;
@@ -16,14 +17,24 @@ export default function Hero() {
 
         {/* ── Photo ───────────────────────────────────────────────────── */}
         <div className="flex-shrink-0 flex justify-center">
-          <Image
-            src="/images/lingli-photo.jpg"
-            alt={profile.fullName}
-            width={300}
-            height={300}
-            className="w-56 h-56 md:w-[300px] md:h-[300px] rounded-2xl object-cover"
-            priority
-          />
+          {/* Pixel-art decorative border: hard accent outline + foreground drop shadow */}
+          <div
+            style={{
+              border: "4px solid var(--accent)",
+              boxShadow: "4px 4px 0 0 var(--foreground), 0 0 0 1px var(--background)",
+              display: "inline-block",
+              lineHeight: 0,
+            }}
+          >
+            <Image
+              src="/images/lingli-photo.jpg"
+              alt={profile.fullName}
+              width={300}
+              height={300}
+              className="w-56 h-56 md:w-[300px] md:h-[300px] object-cover block"
+              priority
+            />
+          </div>
         </div>
 
         {/* ── Text content ────────────────────────────────────────────── */}
@@ -55,6 +66,8 @@ export default function Hero() {
             resumeHref={profile.resumes.data}
             mode={mode}
           />
+
+          <HeroIntroHint />
         </div>
 
       </div>
