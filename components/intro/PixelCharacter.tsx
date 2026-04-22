@@ -32,7 +32,8 @@ export default function PixelCharacter({
   className,
 }: Props) {
   const reduced = useReducedMotion();
-  const displayWidth = scale * LOGICAL_WIDTH;
+  const displayWidth  = scale * LOGICAL_WIDTH;
+  const displayHeight = scale * 40; // 40 logical px tall — fits standing + slight headroom
 
   // Walk-cycle state
   const [walkFrame, setWalkFrame] = useState(0);
@@ -73,23 +74,28 @@ export default function PixelCharacter({
   return (
     <div
       className={className}
-      style={{ width: displayWidth, height: "auto", display: "inline-block" }}
+      style={{
+        position: "relative",
+        display: "inline-block",
+        width: displayWidth,
+        height: displayHeight,
+        overflow: "hidden",
+        flexShrink: 0,
+      }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <Image
         src={src}
         alt={ALT_TEXT[activeVariant]}
-        width={displayWidth}
-        height={displayWidth} // square placeholder; height auto via CSS
+        fill
         unoptimized
         priority
+        sizes={`${displayWidth}px`}
         style={{
           imageRendering: "pixelated",
-          width: displayWidth,
-          height: "auto",
           objectFit: "contain",
-          display: "block",
+          objectPosition: "bottom center",
         }}
       />
     </div>
