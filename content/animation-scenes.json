@@ -1,0 +1,19 @@
+{
+  "scenes": [
+    {"id": "scene-0-cold-open",      "duration": 2000},
+    {"id": "scene-1-origin-china",   "duration": 1500},
+    {"id": "scene-2-student-life",   "duration": 1500},
+    {"id": "scene-3-bachelors",      "duration": 1500},
+    {"id": "scene-4-rsm-consultant", "duration": 2000},
+    {"id": "scene-5-ey-auditor",     "duration": 3500},
+    {"id": "scene-5-5-respawn",      "duration": 1500},
+    {"id": "scene-6-crossing-pacific","duration": 2000},
+    {"id": "scene-7-oss4ai-win",     "duration": 3000},
+    {"id": "scene-8-northeastern",   "duration": 2000},
+    {"id": "scene-9-skill-explosion","duration": 3000},
+    {"id": "scene-10-permitpredict-win","duration": 2500},
+    {"id": "scene-11-current-state", "duration": 3000, "templateVars": ["currentRole"]},
+    {"id": "scene-12-crossroads-cta","duration": 3000, "templateVars": ["statusText", "graduationDate"]},
+    {"id": "scene-13-hobby-bar",     "duration": 2000}
+  ]
+}

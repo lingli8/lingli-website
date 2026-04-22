@@ -1,0 +1,17 @@
+{
+  "name": "Lingli",
+  "fullName": "Lingli Yang",
+  "tagline": "I am root. but I flow.",
+  "email": "liliyang08@outlook.com",
+  "phone": "(206) 741-7723",
+  "location": "Seattle, WA",
+  "social": {
+    "github": "https://github.com/lingli8",
+    "linkedin": "https://linkedin.com/in/YOUR_HANDLE"
+  },
+  "resumes": {
+    "data": "/resume-data.pdf",
+    "ai": "/resume-ai.pdf",
+    "sde": "/resume-sde.pdf"
+  }
+}

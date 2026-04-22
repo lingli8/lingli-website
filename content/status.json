@@ -1,0 +1,18 @@
+{
+  "mode": "job-seeking",
+  "role": "Data / AI Engineer in training",
+  "education": {
+    "institution": "Northeastern",
+    "degree": "MSIS",
+    "graduationDate": "Jul 2027",
+    "classOf": "'27"
+  },
+  "availability": {
+    "seeking": ["Data Engineering", "AI Engineering"],
+    "location": ["Seattle", "Remote", "Relocation-friendly"],
+    "startDate": "Aug 2027",
+    "internshipOpen": true,
+    "visa": "sponsorship needed (F-1 → H-1B)"
+  },
+  "currentActivity": "Intern (AI/Data team)"
+}

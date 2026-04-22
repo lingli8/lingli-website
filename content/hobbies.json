@@ -1,0 +1,45 @@
+{
+  "title": "BEYOND WORK",
+  "subtitle": "(a.k.a. things that keep me sane)",
+  "items": [
+    {
+      "icon": "🥊",
+      "label": "TRAINING LIST",
+      "content": "tennis 🎾 · gym 💪 · BJJ 🥋 · boxing 🥊 (next)",
+      "footnote": "if it's uncomfortable, I'm in"
+    },
+    {
+      "icon": "🥾",
+      "label": "NORTHEASTERN HIKING CLUB",
+      "content": "Officer · 30+ trails",
+      "footnote": "Seattle weather? Still went."
+    },
+    {
+      "icon": "✍️",
+      "label": "CHINESE WEB NOVEL",
+      "content": "Otome genre · female-led stories",
+      "footnote": "WIP. Don't ask for the link. Yet."
+    },
+    {
+      "icon": "📖",
+      "label": "CURRENTLY READING",
+      "content": "Fundamentals of Data Engineering",
+      "footnote": "(...and some sci-fi on the side)"
+    },
+    {
+      "icon": "🗣",
+      "label": "SPEAKS",
+      "content": "Mandarin · English · SQL"
+    },
+    {
+      "icon": "🧃",
+      "label": "POWERED BY",
+      "content": "Matcha lattes at dangerous volumes"
+    },
+    {
+      "icon": "💡",
+      "label": "MOTTO",
+      "content": "New activity? Sign me up."
+    }
+  ]
+}

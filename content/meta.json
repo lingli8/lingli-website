@@ -1,0 +1,15 @@
+{
+  "site": {
+    "title": "Lingli Yang · Data / AI Engineer",
+    "description": "From Big-4 auditor to Seattle-based data engineer. MSIS @ Northeastern. 2× hackathon winner.",
+    "ogImage": "/og-image.png",
+    "lastDeployed": "AUTO"
+  },
+  "footer": {
+    "prompt": "lingli@root:~$ flow",
+    "copyright": "© 2026 Lingli Yang",
+    "builtWith": "Built with ❤️ + matcha"
+  },
+  "consoleEasterEgg": true,
+  "easterEggCount": 9
+}

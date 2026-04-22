@@ -1,0 +1,71 @@
+{
+  "timeline": [
+    {
+      "id": "ai-intern",
+      "type": "work",
+      "icon": "🤖",
+      "role": "AI Engineering Intern",
+      "org": "Independent / JR's team",
+      "location": "Seattle",
+      "start": "2026-04",
+      "end": "present",
+      "bullets": [
+        "Built LangGraph agent with 3 specialized tools",
+        "Achieved 80% precision@5 on RAG evaluation",
+        "Multi-turn conversation memory via checkpointing"
+      ],
+      "tags": ["LangGraph", "RAG", "Python"]
+    },
+    {
+      "id": "msis",
+      "type": "education",
+      "icon": "🎓",
+      "role": "Master of Science, Information Systems",
+      "org": "Northeastern University, Seattle",
+      "start": "2025-09",
+      "end": "2027-07",
+      "coursework": ["Machine Learning", "Data Management", "Application Engineering (Java/OOP)", "Web Dev"]
+    },
+    {
+      "id": "ey",
+      "type": "work",
+      "icon": "📋",
+      "role": "Staff Accountant",
+      "org": "Ernst & Young Hua Ming LLP",
+      "location": "Changsha, China",
+      "start": "2024-09",
+      "end": "2025-07",
+      "bullets": [
+        "Validated 9,000+ financial records (>95% integrity)",
+        "Built Excel automation reducing work by 40%",
+        "Managed 3+ concurrent projects"
+      ],
+      "hiddenEasterEgg": "🦆"
+    },
+    {
+      "id": "rsm",
+      "type": "work",
+      "icon": "💼",
+      "role": "Consultant",
+      "org": "RSM Corporate Advisory",
+      "location": "Shenzhen, China",
+      "start": "2022-07",
+      "end": "2024-03",
+      "bullets": [
+        "Processed 50,000+ transaction records",
+        "Root cause analysis on data discrepancies",
+        "Served 5+ client engagements"
+      ]
+    },
+    {
+      "id": "bachelors",
+      "type": "education",
+      "icon": "📚",
+      "role": "Bachelor of Management, Accounting",
+      "org": "Hunan Women's University",
+      "location": "Changsha, China",
+      "start": "2018-09",
+      "end": "2022-06"
+    }
+  ]
+}

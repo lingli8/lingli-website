@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": "ai-eng",
+      "icon": "🧠",
+      "name": "AI Engineering",
+      "skills": [
+        {"name": "LangGraph", "usedIn": "PermitPredict Agent", "level": "proficient"},
+        {"name": "RAG Pipelines", "usedIn": "PermitPredict Agent", "level": "proficient"},
+        {"name": "ChromaDB", "usedIn": "PermitPredict Agent", "level": "proficient"},
+        {"name": "LLM APIs (Claude, GPT-4)", "usedIn": "PermitPredict", "level": "proficient"},
+        {"name": "Sentence-Transformers", "usedIn": "PermitPredict Agent", "level": "comfortable"},
+        {"name": "Pydantic Validation", "usedIn": "PermitPredict Agent", "level": "comfortable"}
+      ]
+    },
+    {
+      "id": "data-eng",
+      "icon": "📊",
+      "name": "Data Engineering",
+      "skills": [
+        {"name": "SQL", "usedIn": "Transit DW, PermitPredict", "level": "proficient"},
+        {"name": "ETL/ELT Pipelines", "usedIn": "Seattle Transit DW", "level": "proficient"},
+        {"name": "Star Schema / 3NF", "usedIn": "Seattle Transit DW, Cinema DB", "level": "proficient"},
+        {"name": "Kafka", "level": "learning"},
+        {"name": "Airflow", "level": "familiar"},
+        {"name": "Spark", "level": "familiar"},
+        {"name": "dbt", "level": "familiar"}
+      ]
+    },
+    {
+      "id": "cloud",
+      "icon": "☁",
+      "name": "Cloud & Infrastructure",
+      "skills": [
+        {"name": "AWS Glue", "level": "proficient"},
+        {"name": "AWS S3", "level": "proficient"},
+        {"name": "AWS Redshift", "level": "proficient"},
+        {"name": "AWS Lambda", "level": "comfortable"},
+        {"name": "AWS Athena", "level": "comfortable"},
+        {"name": "Docker", "level": "comfortable"},
+        {"name": "Vercel", "level": "proficient"}
+      ]
+    },
+    {
+      "id": "languages",
+      "icon": "💻",
+      "name": "Languages",
+      "skills": [
+        {"name": "Python", "level": "proficient"},
+        {"name": "Java", "level": "proficient"},
+        {"name": "TypeScript", "level": "comfortable"},
+        {"name": "JavaScript", "level": "comfortable"},
+        {"name": "SQL (T-SQL, PostgreSQL)", "level": "proficient"},
+        {"name": "HTML/CSS", "level": "comfortable"}
+      ]
+    },
+    {
+      "id": "backend",
+      "icon": "🔧",
+      "name": "Backend",
+      "skills": [
+        {"name": "FastAPI", "level": "proficient"},
+        {"name": "Spring Boot", "level": "comfortable"},
+        {"name": "Next.js 15", "level": "comfortable"},
+        {"name": "REST APIs", "level": "proficient"},
+        {"name": "Event-Driven Architecture", "level": "comfortable"}
+      ]
+    },
+    {
+      "id": "learning",
+      "icon": "🔥",
+      "name": "Currently Learning",
+      "skills": [
+        {"name": "System Design", "level": "learning"},
+        {"name": "LeetCode (daily)", "level": "learning"},
+        {"name": "Distributed Systems", "level": "learning"},
+        {"name": "Snowflake", "level": "learning"}
+      ]
+    }
+  ]
+}

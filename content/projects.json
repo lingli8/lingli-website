@@ -1,0 +1,71 @@
+{
+  "featured": ["permitpredict-agent", "oss4ai", "transit-dw", "nutrition-tracker"],
+  "projects": {
+    "permitpredict-agent": {
+      "title": "PermitPredict Agent",
+      "subtitle": "AI Agent with RAG & Multi-Step Reasoning",
+      "badge": "🏆",
+      "oneLiner": "LangGraph agent with 3 tools, 80% precision@5",
+      "stack": ["Python", "LangGraph", "ChromaDB", "Claude API", "FastAPI"],
+      "metrics": [
+        {"label": "Precision@5", "value": "80%"},
+        {"label": "Documents indexed", "value": "992"},
+        {"label": "Max tool calls/turn", "value": "5 (guardrail)"}
+      ],
+      "links": {
+        "github": "https://github.com/lingli8/permitpredict-agent",
+        "demo": null,
+        "caseStudy": "/projects/permitpredict-agent"
+      },
+      "date": "2026-04",
+      "featured": true,
+      "archived": false
+    },
+    "oss4ai": {
+      "title": "OSS4AI Hackathon — Prompt Engineering Tool",
+      "badge": "🏆",
+      "subtitle": "1st hackathon win, 2 months after arriving in the US",
+      "oneLiner": "[Fill in based on actual project]",
+      "stack": ["Python", "LLM APIs"],
+      "links": {
+        "github": "https://github.com/lingli8"
+      },
+      "date": "2025-11",
+      "featured": true
+    },
+    "transit-dw": {
+      "title": "Seattle Transit Data Warehouse",
+      "subtitle": "Real-Time ELT Pipeline",
+      "oneLiner": "GTFS-RT ingestion for 2 transit agencies, star schema DW",
+      "stack": ["Python", "AWS Glue", "S3", "Redshift", "Protobuf"],
+      "metrics": [
+        {"label": "Polling interval", "value": "30s"},
+        {"label": "Entities/cycle", "value": "~1,350"},
+        {"label": "Fact tables", "value": "3"},
+        {"label": "Dimensions", "value": "8"}
+      ],
+      "date": "2026-03",
+      "featured": true
+    },
+    "nutrition-tracker": {
+      "title": "Nutrition Tracker",
+      "subtitle": "Event-Driven REST API with Strategy Pattern",
+      "oneLiner": "Spring Boot + pub-sub, 4 pluggable recommendation algorithms",
+      "stack": ["Java", "Spring Boot", "SQLite", "Docker"],
+      "metrics": [
+        {"label": "Algorithms", "value": "4 pluggable"},
+        {"label": "Acceptance rate", "value": "60-70%"}
+      ],
+      "date": "2025-12",
+      "featured": true
+    },
+    "cinema-db": {
+      "title": "Cinema Management Database",
+      "subtitle": "Normalized relational DB in 3NF",
+      "oneLiner": "12+ tables, stored procedures, ACID transactions",
+      "stack": ["SQL Server", "T-SQL"],
+      "date": "2025-11",
+      "featured": false
+    }
+  }
+}
