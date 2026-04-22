@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import FeaturedAchievement from "@/components/sections/FeaturedAchievement";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
+      <FeaturedAchievement />
       <ThemeToggle />
     </main>
   );
