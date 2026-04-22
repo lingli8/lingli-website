@@ -44,7 +44,7 @@ export default function ExperienceEntryRow({ entry, isLast }: Props) {
               className="opacity-0 hover:opacity-100 transition-opacity cursor-pointer text-base select-none"
               title="Easter egg unlocked 🎉"
               aria-hidden="true"
-              onClick={() => discover(EASTER_EGGS.EY_SWEAT_DROP)}
+              onClick={() => discover(EASTER_EGGS.EY_SWEAT)}
             >
               {entry.hiddenEasterEgg}
             </span>

@@ -19,7 +19,7 @@ const themeScript = `(function(){
   try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}
   try{
     console.log('%c\\n  lingli.dev  \\n\\nFound a secret! Type __discoverConsoleEgg() to unlock it.\\n','color:#E07856;font-family:monospace;font-size:13px;font-weight:bold;');
-    window.__discoverConsoleEgg=function(){try{var f=JSON.parse(localStorage.getItem('easter-eggs-found')||'[]');var id='console-ascii-art';if(f.indexOf(id)!==-1){console.log('%cAlready found this one! Keep exploring...','color:#E07856');return;}f.push(id);localStorage.setItem('easter-eggs-found',JSON.stringify(f));window.dispatchEvent(new CustomEvent('egg-discovered',{detail:{id:id,count:f.length}}));console.log('%cEaster egg found! ('+f.length+'/9) Check the footer!','color:#E07856;font-weight:bold');}catch(e){}};
+    window.__discoverConsoleEgg=function(){try{var f=JSON.parse(localStorage.getItem('easter-eggs-found')||'[]');var id='console-ascii-egg';if(f.indexOf(id)!==-1){console.log('%cAlready found this one! Keep exploring...','color:#E07856');return;}f.push(id);localStorage.setItem('easter-eggs-found',JSON.stringify(f));window.dispatchEvent(new CustomEvent('egg-discovered',{detail:{id:id,count:f.length}}));console.log('%cEaster egg found! ('+f.length+'/9) Check the footer!','color:#E07856;font-weight:bold');}catch(e){}};
   }catch(e){}
 })();`;
 

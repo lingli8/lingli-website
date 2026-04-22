@@ -19,7 +19,7 @@ export default function Footer() {
           <span className="text-secondary">$</span>{" "}
           <span className="text-foreground/90">{footer.prompt.replace(/^.*?\$ /, "")}</span>
           <button
-            onClick={() => discover(EASTER_EGGS.FOOTER_PROMPT)}
+            onClick={() => discover(EASTER_EGGS.FOOTER_FLOW)}
             className="animate-pulse text-accent ml-0.5 cursor-pointer bg-transparent border-none p-0 leading-none"
             aria-label="Hidden easter egg"
             title="..."
