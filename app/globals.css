@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
-/* ── Base CSS variables (light mode) ─────────────────────────────────────── */
-:root {
+/* ── Light mode (default) ────────────────────────────────────────────────── */
+:root,
+:root[data-theme="light"] {
   --background: #FFF5E1;
   --foreground: #2D2020;
   --accent:     #E07856;
   --secondary:  #4A5F85;
 }
 
-/* ── Dark mode overrides ─────────────────────────────────────────────────── */
+/* ── System dark preference (no manual override) ─────────────────────────── */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --background: #1A1515;
     --foreground: #F5D3B5;
     --accent:     #FFB4A2;
@@ -18,14 +19,20 @@
   }
 }
 
-/* ── Tailwind v4 theme — maps CSS vars to utility classes ────────────────── */
+/* ── Manual dark override ────────────────────────────────────────────────── */
+:root[data-theme="dark"] {
+  --background: #1A1515;
+  --foreground: #F5D3B5;
+  --accent:     #FFB4A2;
+  --secondary:  #8DA3C4;
+}
+
+/* ── Tailwind v4 theme ───────────────────────────────────────────────────── */
 @theme inline {
-  /* Fonts */
   --font-sans:  var(--font-inter);
   --font-pixel: var(--font-press-start);
   --font-mono:  var(--font-jetbrains-mono);
 
-  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent:     var(--accent);
@@ -35,6 +42,14 @@
 }
 
 /* ── Base styles ─────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 body {
   background: var(--background);
   color:      var(--foreground);
