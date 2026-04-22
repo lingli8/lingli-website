@@ -9,7 +9,7 @@
     },
     {
       "id": "scene-1-origin-china",
-      "duration": 1500,
+      "duration": 2500,
       "background": "china-origin",
       "character": "base",
       "popup": {
@@ -24,7 +24,7 @@
     },
     {
       "id": "scene-2-student-life",
-      "duration": 1500,
+      "duration": 2000,
       "character": "base",
       "popup": {
         "main": ["Studying hard..."],
@@ -39,7 +39,7 @@
     },
     {
       "id": "scene-3-bachelors",
-      "duration": 1500,
+      "duration": 2000,
       "character": "base",
       "popup": {
         "main": ["🎓 Bachelor's: Accounting", "Hunan Women's University"],
