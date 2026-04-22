@@ -4,15 +4,15 @@
       "id": "ai-intern",
       "type": "work",
       "icon": "🤖",
-      "role": "Data Engineering Intern",
-      "org": "Independent / JR's team",
+      "role": "AI Engineering Intern",
+      "org": "Independent Project",
       "location": "Seattle",
-      "start": "2026-05",
+      "start": "2026-04",
       "end": "present",
       "bullets": [
-        "Built LangGraph agent with 3 specialized tools",
-        "Achieved 80% precision@5 on RAG evaluation",
-        "Multi-turn conversation memory via checkpointing"
+        "Built LangGraph agent with 3 specialized tools (semantic search, ML prediction, requirements lookup)",
+        "Achieved 80% precision@5 on RAG evaluation across 20 test queries",
+        "Implemented multi-turn conversation memory via LangGraph checkpointing"
       ],
       "tags": ["LangGraph", "RAG", "Python"]
     },
