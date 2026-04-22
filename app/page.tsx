@@ -5,6 +5,7 @@ import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import BeyondWork from "@/components/sections/BeyondWork";
+import Contact from "@/components/sections/Contact";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <BeyondWork />
+      <Contact />
       <ThemeToggle />
     </main>
   );
