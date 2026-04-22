@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { content } from "@/lib/content";
 import HeroTagline from "./HeroTagline";
 import HeroLinks from "./HeroLinks";
@@ -13,23 +14,15 @@ export default function Hero() {
     >
       <div className="max-w-5xl mx-auto w-full flex flex-col md:flex-row gap-10 md:gap-16 items-center">
 
-        {/* ── Photo / placeholder ─────────────────────────────────────── */}
+        {/* ── Photo ───────────────────────────────────────────────────── */}
         <div className="flex-shrink-0 flex justify-center">
-          {/*
-           * TODO: replace this div with:
-           *   <Image
-           *     src="/images/lingli-photo.jpg"
-           *     alt={profile.fullName}
-           *     width={300} height={300}
-           *     className="rounded-2xl object-cover"
-           *     priority
-           *   />
-           * once the real photo is at public/images/lingli-photo.jpg
-           */}
-          <div
-            className="w-56 h-56 md:w-[300px] md:h-[300px] rounded-2xl bg-divider"
-            role="img"
-            aria-label={`${profile.fullName} — photo coming soon`}
+          <Image
+            src="/images/lingli-photo.jpg"
+            alt={profile.fullName}
+            width={300}
+            height={300}
+            className="w-56 h-56 md:w-[300px] md:h-[300px] rounded-2xl object-cover"
+            priority
           />
         </div>
 
