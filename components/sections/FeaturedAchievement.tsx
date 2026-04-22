@@ -2,6 +2,12 @@ import { content } from "@/lib/content";
 import FadeUp from "@/components/ui/FadeUp";
 import SectionHeading from "@/components/ui/SectionHeading";
 
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function formatYearMonth(ym: string): string {
+  const [year, month] = ym.split("-");
+  return `${MONTHS[Number(month) - 1]} ${year}`;
+}
+
 export default function FeaturedAchievement() {
   const { featured } = content.achievements;
 
@@ -39,13 +45,18 @@ export default function FeaturedAchievement() {
             <div className="flex flex-col gap-2 flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-2">
                 {featured.award && (
-                  <span className="text-xs font-pixel text-accent border border-accent/40 rounded px-2 py-0.5"
-                    style={{ fontSize: "0.55rem" }}>
+                  <span
+                    className="text-xs font-pixel text-accent border border-accent/40 rounded px-2 py-0.5"
+                    style={{ fontSize: "0.55rem" }}
+                  >
                     {featured.award}
                   </span>
                 )}
+                {featured.award && (
+                  <span className="text-xs text-secondary" aria-hidden="true">·</span>
+                )}
                 <span className="text-xs text-secondary font-mono">
-                  {featured.date}
+                  {formatYearMonth(featured.date)}
                 </span>
               </div>
 
