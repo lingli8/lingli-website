@@ -14,7 +14,7 @@ export default function HeroIntroHint() {
 
   return (
     <a
-      href="#" // TODO: replace with /intro once animation route is built
+      href="/intro"
       className="mt-2 text-sm opacity-70 hover:opacity-100 inline-flex items-center gap-2 transition-opacity"
     >
       🎮 First time here? Watch my 30-second story →

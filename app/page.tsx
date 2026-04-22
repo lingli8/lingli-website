@@ -1,3 +1,4 @@
+import HomeGuard from "@/components/HomeGuard";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import FeaturedAchievement from "@/components/sections/FeaturedAchievement";
@@ -12,18 +13,20 @@ import { EasterEggToast } from "@/components/ui/EasterEggTracker";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <FeaturedAchievement />
-      <Skills />
-      <Experience />
-      <Projects />
-      <BeyondWork />
-      <Contact />
-      <ThemeToggle />
-      <Footer />
-      <EasterEggToast />
-    </main>
+    <HomeGuard>
+      <main>
+        <Hero />
+        <About />
+        <FeaturedAchievement />
+        <Skills />
+        <Experience />
+        <Projects />
+        <BeyondWork />
+        <Contact />
+        <ThemeToggle />
+        <Footer />
+        <EasterEggToast />
+      </main>
+    </HomeGuard>
   );
 }
