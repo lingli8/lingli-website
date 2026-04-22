@@ -34,9 +34,9 @@ export const StatusSchema = z.object({
   }),
   availability: z.object({
     seeking: z.array(z.string()),
-    location: z.array(z.string()),
-    startDate: z.string(),
-    internshipOpen: z.boolean(),
+    fullTimeStart: z.string(),
+    internshipsOpen: z.boolean(),
+    location: z.string(),
     visa: z.string(),
   }),
   currentActivity: z.string(),

@@ -27,27 +27,22 @@ export default function Contact() {
                   <h3 className="font-semibold text-foreground">I&apos;m open to:</h3>
                   <ul className="flex flex-col gap-2 text-sm text-foreground/80">
                     <li className="flex gap-2">
-                      <span className="text-accent">▸</span>
-                      <span>{availability.seeking.join(" / ")}</span>
+                      <span aria-hidden="true">✅</span>
+                      <span>Seeking: {availability.seeking.join(" / ")} roles</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-accent">▸</span>
-                      <span>Full-time · Start {availability.startDate}</span>
+                      <span aria-hidden="true">✅</span>
+                      <span>
+                        Full-time {availability.fullTimeStart}
+                        {availability.internshipsOpen && " · Summer internships open now"}
+                      </span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-accent">▸</span>
-                      <span>{availability.location.join(" · ")}</span>
+                      <span aria-hidden="true">✅</span>
+                      <span suppressHydrationWarning>
+                        {availability.location} · {availability.visa}
+                      </span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-accent">▸</span>
-                      <span suppressHydrationWarning>Visa: {availability.visa}</span>
-                    </li>
-                    {availability.internshipOpen && (
-                      <li className="flex gap-2">
-                        <span className="text-success">▸</span>
-                        <span className="text-success">Internships: open</span>
-                      </li>
-                    )}
                   </ul>
                 </>
               ) : (
