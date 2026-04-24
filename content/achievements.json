@@ -1,12 +1,12 @@
 {
   "featured": {
-    "id": "mayor-office-2026",
+    "id": "mayor-office-2025",
     "icon": "🏛️",
     "title": "Presented to Seattle Mayor's Office",
     "project": "PermitPredict",
     "description": "An AI system predicting building permit approval timelines for contractors. Built with LangGraph, RAG, and Claude API.",
     "award": "1st Place @ PACT-Athon 2025",
-    "date": "2026-03",
+    "date": "2025-10",
     "link": "/projects/permitpredict",
     "spotlight": true
   },
