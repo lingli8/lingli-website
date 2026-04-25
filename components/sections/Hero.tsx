@@ -2,7 +2,7 @@ import Image from "next/image";
 import { content } from "@/lib/content";
 import HeroTagline from "./HeroTagline";
 import HeroLinks from "./HeroLinks";
-import HeroIntroHint from "./HeroIntroHint";
+
 
 export default function Hero() {
   const { profile, status } = content;
@@ -67,7 +67,6 @@ export default function Hero() {
             mode={mode}
           />
 
-          <HeroIntroHint />
         </div>
 
       </div>
