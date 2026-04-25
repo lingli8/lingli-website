@@ -40,7 +40,7 @@ export default function Contact() {
                     <li className="flex gap-2">
                       <span aria-hidden="true">✅</span>
                       <span suppressHydrationWarning>
-                        {availability.location} · {availability.visa}
+                        {availability.location}
                       </span>
                     </li>
                   </ul>

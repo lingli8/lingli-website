@@ -37,7 +37,7 @@ export const StatusSchema = z.object({
     fullTimeStart: z.string(),
     internshipsOpen: z.boolean(),
     location: z.string(),
-    visa: z.string(),
+    visa: z.string().optional(),
   }),
   currentActivity: z.string(),
 });
