@@ -9,7 +9,7 @@
       "stack": ["Python", "LangGraph", "ChromaDB", "Claude API", "FastAPI"],
       "metrics": [
         {"label": "Precision@5", "value": "80%"},
-        {"label": "Documents indexed", "value": "992"},
+        {"label": "Documents indexed", "value": "56 (992 comments)"},
         {"label": "Max tool calls/turn", "value": "5 (guardrail)"}
       ],
       "links": {
