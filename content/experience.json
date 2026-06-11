@@ -1,6 +1,16 @@
 {
   "timeline": [
     {
+      "id": "aaqt",
+      "type": "work",
+      "icon": "⚡",
+      "role": "Fintech Software - Data Engineer Intern",
+      "org": "Advantage AI Quantum Tax, LLC",
+      "location": "Remote",
+      "start": "2026-05",
+      "end": "present"
+    },
+    {
       "id": "msis",
       "type": "education",
       "icon": "🎓",
