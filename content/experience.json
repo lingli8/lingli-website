@@ -1,14 +1,23 @@
 {
   "timeline": [
     {
-      "id": "aaqt",
+      "id": "aaqt-intern",
       "type": "work",
-      "icon": "⚡",
-      "role": "Fintech Software - Data Engineer Intern",
-      "org": "Advantage AI Quantum Tax, LLC",
+      "icon": "💼",
+      "role": "Software Engineering Intern",
+      "org": "AAQT",
       "location": "Remote",
       "start": "2026-05",
-      "end": "present"
+      "end": "2026-08",
+      "bullets": [
+        "Owned coordination and architecture across a 9-workstream platform build: authored 3 architecture decision records (ADRs), maintained the phase proposal / project plan, ran cross-workstream code reviews, and prepared next-phase planning — coordinating execution across a 3-person team (founder + 2 engineers).",
+        "Built the multi-tenant security layer for a tax-compliance platform: per-request tenant context, per-tenant key derivation, tamper-evident audit logging; drove an OWASP cross-tenant isolation audit backed by 105 isolation tests.",
+        "Owned infrastructure-as-code — 11 Terraform modules managing 30+ AWS resources (VPC, KMS, EFS, IAM, CloudWatch, Secrets Manager, RDS, CloudTrail), each verified against live AWS rather than state alone.",
+        "Ran the extraction accuracy baseline and found the model was only ~10% accurate — and that its confidence was inversely correlated with correctness (most confident when most wrong). That finding directly shaped the accuracy-gate design for the validation framework I owned.",
+        "Shipped case-management and alerting API features and authored a step-by-step deployment runbook with rollback boundaries and acceptance checks; on the final day cleared the review queue — 22 PRs merged with seven verified Terraform applies in a 5,570-test codebase.",
+        "Developed a verification practice (confirming CI gates and audit controls actually execute) that repeatedly surfaced silent failures others missed."
+      ],
+      "tags": ["Python", "pytest", "Terraform", "AWS", "Docker", "multi-tenancy", "OWASP"]
     },
     {
       "id": "msis",

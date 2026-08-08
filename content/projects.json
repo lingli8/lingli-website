@@ -1,6 +1,19 @@
 {
-  "featured": ["permitpredict-agent", "oss4ai", "transit-dw", "nutrition-tracker"],
+  "featured": ["green-check-case-study", "permitpredict-agent", "oss4ai", "transit-dw", "nutrition-tracker"],
   "projects": {
+    "green-check-case-study": {
+      "title": "When the green check tests nothing",
+      "subtitle": "Case Study",
+      "badge": "📖",
+      "oneLiner": "Lessons on verification practices and intellectual honesty from building multi-tenant infrastructure",
+      "stack": ["Python", "Terraform", "AWS", "pytest", "CI/CD"],
+      "links": {
+        "caseStudy": "/when-the-green-check-tests-nothing"
+      },
+      "date": "2026-08",
+      "featured": true,
+      "archived": false
+    },
     "permitpredict-agent": {
       "title": "PermitPredict Agent",
       "subtitle": "AI Agent with RAG & Multi-Step Reasoning",
