@@ -88,6 +88,17 @@ export default function ProjectCard({ project }: Props) {
               📖 Case study →
             </a>
           )}
+          {links.play && (
+            <a
+              href={links.play}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Play ${title}`}
+              className="text-xs font-medium text-secondary hover:text-accent transition-colors"
+            >
+              🎮 Play →
+            </a>
+          )}
         </div>
       )}
     </article>

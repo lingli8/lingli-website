@@ -95,6 +95,7 @@ export const ProjectLinksSchema = z.object({
   github: z.string().url().optional(),
   demo: z.string().url().nullable().optional(),
   caseStudy: z.string().optional(),
+  play: z.string().url().optional(),
 });
 
 export const ProjectSchema = z.object({

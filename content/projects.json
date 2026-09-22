@@ -1,5 +1,5 @@
 {
-  "featured": ["green-check-case-study", "permitpredict-agent", "oss4ai", "transit-dw", "nutrition-tracker"],
+  "featured": ["trust-fall", "green-check-case-study", "permitpredict-agent", "transit-dw", "nutrition-tracker", "oss4ai"],
   "projects": {
     "green-check-case-study": {
       "title": "When the green check tests nothing",
@@ -11,6 +11,19 @@
         "caseStudy": "/when-the-green-check-tests-nothing"
       },
       "date": "2026-08",
+      "featured": true,
+      "archived": false
+    },
+    "trust-fall": {
+      "title": "Trust Fall",
+      "subtitle": "AI Trust-Calibration Game (Cyberpunk Narrative)",
+      "badge": "🎮",
+      "oneLiner": "A solo-built cyberpunk game about when to trust an AI teammate — built for Defense Tech Jam (Challenge 2: Human-AI Teaming)",
+      "stack": ["React", "Web Audio API", "Speech Synthesis", "Claude API", "Game Design"],
+      "links": {
+        "play": "https://trust-fall-pi.vercel.app"
+      },
+      "date": "2026-09",
       "featured": true,
       "archived": false
     },
