@@ -11,8 +11,8 @@
       "end": "2026-08",
       "bullets": [
         "Owned coordination and architecture across a 9-workstream platform build: authored 3 architecture decision records (ADRs), maintained the phase proposal / project plan, ran cross-workstream code reviews, and prepared next-phase planning — coordinating execution across a 3-person team (founder + 2 engineers).",
-        "Built the multi-tenant security layer for a tax-compliance platform: per-request tenant context, per-tenant key derivation, tamper-evident audit logging; drove an OWASP cross-tenant isolation audit backed by 105 isolation tests.",
-        "Owned infrastructure-as-code — 11 Terraform modules managing 30+ AWS resources (VPC, KMS, EFS, IAM, CloudWatch, Secrets Manager, RDS, CloudTrail), each verified against live AWS rather than state alone.",
+        "Built a PII key vault deriving a separate encryption key per tenant, plus a hash-chained audit log with tamper verification and an 80-rule sanity-check layer over extracted values.",
+        "Owned infrastructure-as-code — authored the majority of the Terraform modules managing AWS resources including VPC, KMS, EFS, IAM, CloudWatch, Secrets Manager, and CloudTrail.",
         "Ran the extraction accuracy baseline and found the model was only ~10% accurate — and that its confidence was inversely correlated with correctness (most confident when most wrong). That finding directly shaped the accuracy-gate design for the validation framework I owned.",
         "Shipped case-management and alerting API features and authored a step-by-step deployment runbook with rollback boundaries and acceptance checks; on the final day cleared the review queue — 22 PRs merged with seven verified Terraform applies in a 5,570-test codebase.",
         "Developed a verification practice (confirming CI gates and audit controls actually execute) that repeatedly surfaced silent failures others missed."
@@ -26,7 +26,7 @@
       "role": "Master of Science, Information Systems",
       "org": "Northeastern University, Seattle",
       "start": "2025-09",
-      "end": "2027-07",
+      "end": "2027-06",
       "coursework": ["Machine Learning", "Data Management", "Application Engineering (Java/OOP)", "Web Dev"]
     },
     {
@@ -39,9 +39,9 @@
       "start": "2024-09",
       "end": "2025-07",
       "bullets": [
-        "Validated 9,000+ financial records (>95% integrity)",
-        "Built Excel automation reducing work by 40%",
-        "Managed 3+ concurrent projects"
+        "Validated and reconciled 9,000+ financial records across 3 concurrent audit engagements, cross-referencing independent sources to verify completeness",
+        "Seconded to the IT Audit team for 6 months, performing system data extraction and validation and reviewing user access rights and segregation-of-duties configurations",
+        "Built Excel reconciliation workflows (VLOOKUP, PivotTables) that were later reused by other team members"
       ],
       "hiddenEasterEgg": "💦"
     },
@@ -55,9 +55,9 @@
       "start": "2022-07",
       "end": "2024-03",
       "bullets": [
-        "Processed 50,000+ transaction records",
-        "Root cause analysis on data discrepancies",
-        "Served 5+ client engagements"
+        "Performed cross-system data reconciliation for ERP migrations across 3 client implementations in energy and retail food, independently validating tens of thousands of records between SAP, Yonyou, and custom platforms with documented lineage",
+        "Executed IT general controls testing across client ERP environments — access provisioning, segregation of duties, change management",
+        "Built Power BI dashboards and ERP-based analytical reports for management review"
       ]
     },
     {
