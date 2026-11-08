@@ -74,6 +74,9 @@
         {"label": "Rows loaded", "value": "54,460"},
         {"label": "Data quality", "value": "5 Layers"}
       ],
+      "links": {
+        "github": "https://github.com/hsamamah/TransitBI"
+      },
       "date": "2026-03",
       "featured": true
     },
