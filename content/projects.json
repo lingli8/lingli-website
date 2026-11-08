@@ -66,13 +66,13 @@
     "transit-dw": {
       "title": "Seattle Transit Data Warehouse",
       "subtitle": "Real-Time ELT Pipeline",
-      "oneLiner": "GTFS-RT ingestion for 2 transit agencies, star schema DW",
+      "oneLiner": "GTFS-RT ingestion for 2 transit agencies, star schema DW. Four-person team project. I owned the real-time ingestion pipeline, the FactStop load, the five-layer data quality framework, and the AWS deployment.",
       "stack": ["Python", "AWS Glue", "S3", "Redshift", "Protobuf"],
       "metrics": [
         {"label": "Polling interval", "value": "30s"},
         {"label": "Entities/cycle", "value": "~1,350"},
-        {"label": "Fact tables", "value": "3"},
-        {"label": "Dimensions", "value": "8"}
+        {"label": "Rows loaded", "value": "54,460"},
+        {"label": "Data quality", "value": "5 Layers"}
       ],
       "date": "2026-03",
       "featured": true
